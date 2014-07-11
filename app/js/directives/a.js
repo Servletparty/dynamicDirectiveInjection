@@ -4,7 +4,7 @@ angular.module("A", []).directive("aTag", function(){
        templateUrl: "template/a.html",
        replace: true,
        scope: {
-           color: "@aColor"
+           color: "@"
        },
        link: function(scope, element, attrs){
            element.css("color", scope.color);
